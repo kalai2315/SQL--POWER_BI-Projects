@@ -1,0 +1,25 @@
+As a data analyst for a retail chain, you are tasked to find out the total product sold quantity of the store which is located at Bangalore.
+
+WITH CTE1 AS (
+    SELECT 
+        PSA.store_id, 
+        PSA.sale_id, 
+        PSA.product_id, 
+        PSA.quantity,
+        PST.store_name
+    FROM  
+        product_sales PSA
+    JOIN  
+        product_stores PST ON PST.store_id = PSA.store_id
+    WHERE 
+        PST.city = 'Bangalore'
+)
+SELECT 
+    store_name, 
+    SUM(quantity) AS total_product_sold
+FROM 
+    CTE1
+GROUP BY 
+    store_name;
+
+
