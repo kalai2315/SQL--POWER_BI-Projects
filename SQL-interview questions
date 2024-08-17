@@ -1,4 +1,22 @@
+Question : 3
 As a data analyst for a retail chain, you are tasked to find out the total product sold quantity of the store which is located at Bangalore.
+
+Sample Input:
+
+Table: product_stores
+
+store_id	store_name	        city
+1	        Store 1	            Bangalore
+2	        Store 2	            Chennai
+
+Table: product_sales
+
+sale_id	    product_id	    store_id	quantity
+1	        1001	            1	        60
+2	        1002	            1	        70
+3	        1003	            2	        20
+4	        1004	            2	        30
+5	        1005	            1	        80
 
 WITH CTE1 AS (
     SELECT 
