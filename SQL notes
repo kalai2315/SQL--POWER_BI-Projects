@@ -1,10 +1,18 @@
-  SQL Basics: Data Retrieval - Single Table
+SQL Basics: Data Retrieval - Single Table
+
 Retrieve data using text query (SELECT, WHERE, DISTINCT, LIKE)
+
 SELECT, FROM, and WHERE are the basic SQL functions.
+
 SELECT * (select all columns of a database.)
+
 USE function - the query to use a particular database
+
 COUNT function - numerical count of rows.
+
 DISTINCT function - see the unique values present in a given column.
+
 '%’ - wild card search.
+
 LIKE function and ‘%’ -   filter the rows based on a text value.
 
